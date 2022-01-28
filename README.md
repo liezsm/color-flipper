@@ -1,0 +1,1 @@
+This repository is for Color Changer Project I made while following the Color Flipper Tutorial by Coding Addict(youtube channel). I customized some of the codes and appearance of the project by adding my own ideas.
