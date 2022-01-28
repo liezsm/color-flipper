@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #7a96c9;
+  font-size: 16px;
+}
+
+/* -navigation */
+.nav-center {
+  height: clamp(50px, 10vw, 80px);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(50px);
+  display: flex;
+
+  /* border: 2px solid red; */
+}
+.nav-center > * {
+  margin: auto;
+}
+.nav-center h1 {
+  padding: 0.4rem;
+  font-weight: 900;
+  background: linear-gradient(
+    135deg,
+    rgba(180, 29, 49, 0.7),
+    rgba(236, 75, 26, 0.7),
+    rgba(233, 229, 6, 0.7),
+    rgba(1, 255, 56, 1),
+    rgba(2, 19, 253, 1),
+    rgba(150, 3, 255, 1),
+    rgba(255, 3, 255, 1)
+  );
+  background-clip: text;
+  --webkit-background-clip: text;
+  color: transparent;
+}
+
+.nav-center ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+li a {
+  padding: 0px 1rem;
+  text-decoration: none;
+  color: antiquewhite;
+  text-transform: uppercase;
+  /* border: 2px solid green; */
+  transition: all 0.2s ease-in;
+  font-size: 1rem;
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(180, 29, 49, 0.7),
+    rgba(236, 75, 26, 0.7),
+    rgba(233, 229, 6, 0.7),
+    rgba(7, 170, 42, 0.7),
+    rgba(4, 20, 247, 0.7),
+    rgba(166, 43, 255, 0.7),
+    rgba(255, 149, 255, 0.7)
+  );
+  background-clip: text;
+  --webkit-background-clip: text;
+  color: transparent;
+  transform: scale(2.2);
+}
+
+a.current {
+  text-decoration: underline;
+}
+/*  - main body */
+
+.container {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: filter(20px); */
+}
+
+#btn {
+  font-size: 1.9rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  background: rgb(122, 150, 201);
+  /* box-shadow: 6px 6px 12px #c4b817, -6px -6px 12px #fff000; */
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25),
+    -6px -6px 12px rgba(255, 255, 255, 0.3);
+}
+.container h2 {
+  /* border: 2px solid red; */
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 600px) {
+  nav h1 {
+    font-size: 2rem;
+  }
+}
